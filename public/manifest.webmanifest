@@ -17,6 +17,6 @@
     ],
     "scope": "/",
     "theme_color": "#dddddd",
-    "description": "This app tracks your budget; you can enter your earnings and spendings and track the total amount in your account, and how your activity fluctuates with each entry.",
+    "description": "- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.",
     "screenshots": ""
 }
