@@ -38,4 +38,8 @@ self.addEventListener('activate', (event) => {
             );
         })
     );
+
+    // Allow an active service worker to set itself as the controller for all clients 
+    // For pages to be controlled immediately
+    self.clients.claim();
 });
