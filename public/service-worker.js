@@ -8,7 +8,7 @@ const FILES_TO_CACHE = [
     "/db.js",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png",
-    "/manifest.json"
+    "/manifest.webmanifest"
 ];
 
 const CACHE_NAME = "static-cache-v2";
@@ -21,7 +21,6 @@ self.addEventListener('install', (event) => {
         caches.open(CACHE_NAME)
             .then((cache) => {
                 console.log('Opened cache successfully!');
-                console.log(cache);
                 return cache.addAll(FILES_TO_CACHE);
             })
     );
@@ -33,7 +32,7 @@ self.addEventListener('install', (event) => {
 // Activate app
 self.addEventListener('activate', (event) => {
     event.waitUntil(
-        cache.keys().then((cacheNames) => {
+        caches.keys().then((cacheNames) => {
             return Promise.all(
                 // Loop through all files and wipe out old caches in the install step (cache management)
                 cacheNames.map((cacheName) => {
