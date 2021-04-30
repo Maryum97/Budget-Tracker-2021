@@ -34,3 +34,36 @@ function saveRecord(record) {
     store.add(record);
 };
 
+function checkDatabase() {
+    db = request.result;
+    // Open a transaction on pending db
+    const transaction = db.transaction(['budget'], 'readwrite');
+    // Access the pending object store
+    const store = transaction.objectStore('budget');
+    // Get all records from store and set to a variable
+    const getAll = store.getAll();
+
+    getAll.onsuccess = () => {
+        if (getAll.result.length > 0) {
+            fetch('api/transaction/bulk', {
+                method: 'POST',
+                body: JSON.stringify(getAll.result),
+                headers: {
+                    Accept: "application/json, text/plain, */*",
+                    "Content-Type": "application/json"
+                }
+            })
+            .then((response) => response.json())
+            .then(() => {
+                // If successful, open a transaction in pending db
+                const transaction = db.transaction(['budget'], 'readwrite');
+                // Access pending object store
+                const store = transaction.objectStore('pending');
+                // Clear all items in the store
+                store.clear();
+            });
+        }
+    };
+};
+
+window.addEventListener('online', checkDatabase);
