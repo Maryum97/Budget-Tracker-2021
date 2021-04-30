@@ -1,0 +1,22 @@
+{
+    "name": "Budget-Tracker",
+    "short_name": "Budget-Tracker",
+    "icons": [
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        }
+    ],
+    "start_url": "/",
+    "background-color": "#dddddd",
+    "display": "standalone",
+    "display_override": [
+        "window-control-overlay",
+        "minimal-ui"
+    ],
+    "scope": "/",
+    "theme_color": "#dddddd",
+    "description": "This app tracks your budget; you can enter your earnings and spendings and track the total amount in your account, and how your activity fluctuates with each entry.",
+    "screenshots": ""
+}
