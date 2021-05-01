@@ -1,0 +1,26 @@
+{
+    "name": "Budget-Tracker",
+    "short_name": "Budget-Tracker",
+    "icons": [
+        {
+            "src": "/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#dddddd",
+    "display": "standalone",
+    "display_override": [
+        "window-control-overlay",
+        "minimal-ui"
+    ],
+    "scope": "/",
+    "theme_color": "#dddddd",
+    "description": "- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online."
+}
