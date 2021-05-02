@@ -9,7 +9,7 @@ This repository contains the homework assignment conducted through the teaching 
 
 Users are also able to utilise this app on their device anywhere they may be, because of how accessible this app has been made as the sole purpose of this assignment - this app is a PWA (Progressive Web Application). In other words, this app enables users to enjoy its features offline, just as well as it does online.
 
-The app allows a user to enter the name and amount of a transaction into the account on the main page. On pressing the "+ Add Funds" and "- Subtract Funds" buttons, the amount of money is added and subtracted from the user's total amount respectively. The total amount is then displayed on the top of the page, and the added/subtracted transactions are represented in the form of an area graph on the same page.
+The app allows a user to enter the name and amount of a transaction into the account on the main page. On pressing the "+ Add Funds" and "- Subtract Funds" buttons, the amount of money is added and subtracted from the user's total amount respectively. The total amount is then displayed on the top of the page, and the added/subtracted transactions are listed on the page, and represented in the form of an area graph (money earned/spent vs current date) on the same page.
 
 This app is deployed on <b>Heroku</b> and is linked below:
 
@@ -59,12 +59,7 @@ Now open the app in the browser, by searching for 'localhost:3001'. Feel free to
 Ypu can also open Robo3T and connect to view all entries in the 'budget' database, if you are directly using the app from Heroku.
 
 ## 💻 Usage
-The app is as simple to use as explained in the description aboev...
-
-## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<br />
-This application is covered by the MIT License license. 
+The app is as simple to use as explained in the description above: simply add/subtract your transactions and watch your financial activity over the course of the given time. The entries are added into the database very conveniently, when online. When offline, the page still loads and entries can still be made, but the entries from online activity are not accessible anymore. However, on coming back online, the transaction entries from online and offline activity are both accessible and visivle on the graph.
 
 ## 👪 Contributing
 If you wish to contribute to my app, contact me using the details below and gain access to my Github repository with your Github account today! Create your own branch and make amendments to my code, to make improvements or for marketing purposes.
@@ -75,9 +70,11 @@ There were no particular test that this app has been made to pass, except for th
 ## 💐 Credits
 I used quite a bit of help from the following sources:
 
-1. https://web.dev/add-manifest/
-2. https://developers.google.com/web/fundamentals/primers/service-workers
-3. https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine
+1. <a href="https://web.dev/add-manifest/">How To Add A Web App - Manifest</a>
+2. <a href="https://developers.google.com/web/fundamentals/primers/service-workers">Service Workers: An Introduction</a>
+3. <a href="https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine">MDN Web Docs - Navigators OnLine</a>
+4. Github.com
+5. AskBCS Learning Assistants
 
 ## ✋ Questions
 If you have any questions, feel free to contact me using the details provided below:<br />
