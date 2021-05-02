@@ -61,6 +61,14 @@ Ypu can also open Robo3T and connect to view all entries in the 'budget' databas
 ## 💻 Usage
 The app is as simple to use as explained in the description above: simply add/subtract your transactions and watch your financial activity over the course of the given time. The entries are added into the database very conveniently, when online. When offline, the page still loads and entries can still be made, but the entries from online activity are not accessible anymore. However, on coming back online, the transaction entries from online and offline activity are both accessible and visivle on the graph.
 
+The following image shows the appearance of the page in the browser:
+![Budget-Tracker-App](https://user-images.githubusercontent.com/73832871/116823017-ebc6d100-ab79-11eb-908f-c262e8346170.png)
+<br>
+
+The image below shows the audit results for this application:
+![Audit](https://user-images.githubusercontent.com/73832871/116823019-ecf7fe00-ab79-11eb-9cbf-6c2bab95326a.png)
+<br>
+
 ## 👪 Contributing
 If you wish to contribute to my app, contact me using the details below and gain access to my Github repository with your Github account today! Create your own branch and make amendments to my code, to make improvements or for marketing purposes.
 
