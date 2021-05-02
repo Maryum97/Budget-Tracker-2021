@@ -56,6 +56,10 @@ After installing the above, run the following commands in the local terminal in 
 
 Now open the app in the browser, by searching for 'localhost:3001'. Feel free to use the app locally and enjoy! Your database should be available to view in Robo3T, which includes all your transaction entries.
 
+In order to operate 'offline', open Dev Tools and go to the Application environment; select 'Service Workers' under 'Application', and tick in the box next to 'offline'.
+
+In order to audit the app, open Dev Tools and go to the Lighthouse environment; click on the 'Generate report' button, and then view all the results.
+
 You can also open Atlas to view all entries in the 'budget' database, if you are directly using the app from Heroku. The entries you added locally, however, will not be available on the public app on Heroku.
 
 ## 💻 Usage
