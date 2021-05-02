@@ -54,20 +54,20 @@ After installing the above, run the following commands in the local terminal in 
 
 <br>
 
-Now open the app in the browser, by searching for 'localhost:3001'. Feel free to use the app locally and enjoy!
+Now open the app in the browser, by searching for 'localhost:3001'. Feel free to use the app locally and enjoy! Your database should be available to view in Robo3T, which includes all your transaction entries.
 
-Ypu can also open Robo3T and connect to view all entries in the 'budget' database, if you are directly using the app from Heroku.
+You can also open Atlas to view all entries in the 'budget' database, if you are directly using the app from Heroku. The entries you added locally, however, will not be available on the public app on Heroku.
 
 ## 💻 Usage
 The app is as simple to use as explained in the description above: simply add/subtract your transactions and watch your financial activity over the course of the given time. The entries are added into the database very conveniently, when online. When offline, the page still loads and entries can still be made, but the entries from online activity are not accessible anymore. However, on coming back online, the transaction entries from online and offline activity are both accessible and visivle on the graph.
 
 The following image shows the appearance of the page in the browser:
 ![Budget-Tracker-App](https://user-images.githubusercontent.com/73832871/116823017-ebc6d100-ab79-11eb-908f-c262e8346170.png)
-<br>
+<br></br>
 
 The image below shows the audit results for this application:
 ![Audit](https://user-images.githubusercontent.com/73832871/116823019-ecf7fe00-ab79-11eb-9cbf-6c2bab95326a.png)
-<br>
+<br></br>
 
 ## 👪 Contributing
 If you wish to contribute to my app, contact me using the details below and gain access to my Github repository with your Github account today! Create your own branch and make amendments to my code, to make improvements or for marketing purposes.
@@ -92,10 +92,3 @@ If you have any questions, feel free to contact me using the details provided be
 ✉️ Email me with any questions: maryumbokhari97@gmail.com<br /><br />
 
 _This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_
-  
-
-
-# Sources
-1. https://web.dev/add-manifest/
-2. https://developers.google.com/web/fundamentals/primers/service-workers
-3. https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine
